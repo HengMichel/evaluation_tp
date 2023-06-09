@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width:100%;
+}
+/* pour initialiser toutes les  balises sut tous les nagigateurs */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure,figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+ 
+}
+
+body{
+    font-family: 'Caveat Brush', cursive;
+}
+
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+
+header{
+    display: flex;
+    background-image:url("../img/planches.jpg");
+    padding-bottom: 250px;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    padding: 10px;
+}
+.asperge{
+    /*width: 100%;
+    position: relative; */
+
+    display: flex;
+    background-image: url("../img/asperge.jpg");
+    padding-bottom: 250px;
+    justify-content: space-evenly;
+
+/* transform: scaleX(-1); on peut utiliser aussi scaleX avec valeur 
+-1 pour ne pas augmenter la taille et juste changer le sens de l'image*/
+/*transform:rotateY(180deg);/*transformer l'image en rotation sur l'axe Y de 180 degre*/
+}
+
+footer {
+    border-bottom: 1px;
+}
+/* img svg 'cerf' :
+
+width : 300px;
+height : 295px; */
+
+.triangle{
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 120px solid rgba(229, 63, 111,0.7);
+    border-left: 120px solid transparent;
+    position: relative;
+    /* left: 0px; */
+    bottom: 134px;
+   }
+   .triangle  img{
+       width: 250px;
+   }
+   
+      .fleche{
+       width:40px;
+       height: 40px;
+       display: inline-block;
+       border-right:0.3em solid #E53F6F;
+       border-top:0.3em solid #E53F6F;
+       transform:rotate(125deg) skewY(20deg);
+       /* position: relative;
+       left:calc(50% - 20px); */
+   }
+   
+   
+.story{
+width: 40%;
+text-align: center;
+padding:35px;
+}
