@@ -1,0 +1,188 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: baseline; */
+}
+.logo {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  transition: ease-out 3s;
+  transform: rotate(360deg);
+}
+
+.header h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+p {
+  display: block;
+  /* width: 10%;
+  font-size: 2px;
+  font-weight: 2px; */
+  font-size: 20px;
+  color: rgb(224, 36, 168);
+}
+
+.help a {
+  color: bleu rgb(103, 220, 255);
+}
+/* .sect1{
+    width: 100%;
+    display: flex;
+} */
+
+/* .article h2{
+    color: white;
+} */
+
+/* h2{
+    margin: 0;
+} */
+/*  */
+
+.article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.nav ul li :first-child {
+  background-color: rgb(224, 36, 168);
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+.nav ul {
+  height: 40px;
+  background-color: rgb(103, 220, 255);
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+.nav li {
+  width: 100px;
+  /* height: 100px; */
+  color: white;
+}
+.nav a {
+  list-style-type: none;
+}
+
+.bandeau {
+  height: 500px;
+  width: 1950px;
+}
+/* **********************************memo tipd*************************************************** */
+/* Besoin d'aide pour caler le numero dans l'image
+background:url(../IMAGE.png) center transparent no repeat;
+width:170px;
+height: 23px; */
+/* .numero{
+  padding: 3px 0 0 55px;
+  + la color blue
+} */
+
+/* mon compte{
+  background-color: le blue du tp;
+  width: 300px;
+  height: 20px;
+  text-align: center;
+  color: white;
+} */
+
+/* image panier + texte dans une div + text-align +
+ space btwin + un margin top de 3px color white */
+
+/* le background de header avec l'image trait */
