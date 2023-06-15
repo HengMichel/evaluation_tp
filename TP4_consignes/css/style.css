@@ -82,11 +82,16 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
+  
   vertical-align: baseline;
 }
 
 * {
   box-sizing: border-box;
+  
+}
+img{
+  width: 100%;
 }
 
 header {
@@ -102,12 +107,18 @@ header {
   transform: rotate(360deg);
 }
 
-.header h2 {
+/* .header h2 {
   font-size: 45px;
   margin-bottom: 20px;
+} */
+h2 {
+  /* width: 33%; */
+  /* justify-content: center; */
+  text-align: left;
+  display: flex;
 }
-p {
-  display: block;
+.header p {
+  display: flex;
   /* width: 10%;
   font-size: 2px;
   font-weight: 2px; */
@@ -118,10 +129,7 @@ p {
 .help a {
   color: bleu rgb(103, 220, 255);
 }
-/* .sect1{
-    width: 100%;
-    display: flex;
-} */
+
 
 /* .article h2{
     color: white;
@@ -142,6 +150,10 @@ p {
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
+ul li {
+  flex: auto;
+  /* permet d'avoir les cases de la meme dimension */
+}
 .nav ul {
   height: 40px;
   background-color: rgb(103, 220, 255);
@@ -160,11 +172,88 @@ p {
   list-style-type: none;
 }
 
-.bandeau {
-  height: 500px;
-  width: 1950px;
+.bandeau img{
+  width: 100%;
 }
-/* **********************************memo tipd*************************************************** */
+
+body {
+  background-image: url(../img/fond.png);
+}
+section {
+  display: flex;
+}
+.sect1{
+  height: 150px;
+  justify-content: space-between;
+  
+}
+.paiement {
+  margin-left: 15px;
+  width: 20%;
+  height: 50%;
+  display: block;
+  border-right: solid 2px white (222,222,222);
+}
+.paiement p {
+  margin: 20px 0;
+}
+.paiement h2 {
+  color: rgb(103, 220, 255);
+}
+.description {
+  width: 40%;
+}
+.description h2 {
+  color: rgb(103, 220, 255);
+}
+.description p {
+  margin: 20px 0;
+}
+.service {
+  margin-right: 15px;
+  justify-content: space-around;
+  width: 20%;
+}
+.service h2 {
+  color: rgb(103, 220, 255);
+}
+.camion {
+  margin-top: 20px;
+  display: flex;
+}
+.camion img{
+  margin-left: 0;
+}
+.camion p  {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.chan {
+  height: 20%;
+  display: flex;
+}
+.chan p {
+  margin-top: 7px;
+  margin-left: 10px;
+}
+/* .bonplan{
+  
+  
+} */
+.bonplan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 40px;
+  background-color: rgb(211, 211, 211);
+}
+.bonplan2 h2 {
+  text-align: center;
+
+}
+
+/* **********************************memo tips*************************************************** */
 /* Besoin d'aide pour caler le numero dans l'image
 background:url(../IMAGE.png) center transparent no repeat;
 width:170px;
@@ -186,3 +275,11 @@ height: 23px; */
  space btwin + un margin top de 3px color white */
 
 /* le background de header avec l'image trait */
+
+
+/* ***************************Le Responsive************************** */
+@media (max-width : 1400px) {
+  .container{ 
+    width: 100%;
+  }
+}
