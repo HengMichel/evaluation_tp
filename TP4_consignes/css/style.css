@@ -100,17 +100,20 @@ header {
   /* align-items: baseline; */
 }
 .logo {
-  width: 80%;
+  width: 10%;
   display: flex;
   align-items: center;
   transition: ease-out 3s;
   transform: rotate(360deg);
 }
 
-/* .header h2 {
-  font-size: 45px;
-  margin-bottom: 20px;
-} */
+.header{
+  font-size: 50px;
+  padding-top: 100px;
+  text-align: left;
+  width: 100%;
+
+}
 h2 {
   /* width: 33%; */
   /* justify-content: center; */
