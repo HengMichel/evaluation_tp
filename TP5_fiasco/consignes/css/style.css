@@ -2,7 +2,7 @@
 
 /* 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
-
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@600 & family= Pacifico & display=swap');
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Regular.ttf");
@@ -130,15 +130,17 @@ time, mark, audio, video {
     box-sizing: border-box;/*pour garder la meme taille*/
 }
 img{
-    /* width:100%; */
+    width:100%;
 }
 body{
     /* font-family:Arial;
     background-image: url("../img/fond.png"); */
-  
+    font-family : 'Dancing Script', cursive ;
 }
 .container{
-    /* width:1000px; */
+
+    width: 1440px;
+    margin: auto;
     /*margin:0 auto;pour centrer la page dans le navigateurs*/
     /* box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: #fff; */
@@ -147,29 +149,166 @@ body{
 /*************** END GLOBAL ***************/
 
 /*************** HEADER ***************/
-header{
+.logo{
+  text-align: left;
+  margin-top: 40px;
+  
+  font-size: 15px;
+}
+header {
+  margin: auto;
+  color: rgb(182, 179, 179);
   background-image: url(../../img/eggs.jpg);
+  width: 1400px;
   height: 610px;
 }
-header nav {
+header , h3{
+  margin-top: 30px;
+  text-align: center;
+  color: yellow;
+  font-family : 'Dancing Script', cursive ;}
+  /*************** NAV ***************/
+header> nav {
+  font-size: 15px;
+  justify-content: space-between;
   justify-content: right;
-  
   display: flex;
   text-align: right;
   list-style-type: none;
-  color: white;
+  color: rgb(182, 179, 179);
 }
-header li a :nth-child(2) :nth-child(4){
+/*************** END NAV ***************/
+header ,li , a :nth-child(2) :nth-child(4){
   justify-content: space-between;
 }
+header h2 ,
+header p {
+  font-weight: 10px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
 /*************** END HEADER ***************/
-
-/*************** NAV ***************/
-
-/*************** END NAV ***************
-
 /*************** MAIN ***************/
+.sectionS1{
+  margin: auto;
+  width: 1000px;
+  display: flex;
 
+}
+.section1{
+  width: 50%;
+}
+.section1 img{
+  background-color: yellow;
+  display: flex;
+}
+.section1a{
+  width: 50%;
+  margin: 50px;
+  text-align: left;
+}
+.section1a h3 , a {
+  
+  text-align: left;
+  color: yellow;
+  text-decoration: none;
+}
+
+.section1a p ,
+.section1a h2 {
+  color: white;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+}
+.section1a h2{
+  margin-top: 30px;
+  color: white;
+  font-weight: 15px ;
+}
+.section1a p {
+  margin-bottom: 20px;
+}
+.s2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.section3 {
+  
+  text-align: center;
+
+}
+.section3 p ,
+.section3 h3 ,
+.section3 h2 ,
+.section3 ul{
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+.section3 h3{
+  color: yellow;
+}
+.section3 ul{
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+} 
+.section4a{
+  display: flex;
+  margin-top: 100px;
+  color: white;
+}
+.description{
+  margin-left: 30px;
+  width: 30%;
+  display: block;
+}
+.description h2{
+  font-size: 17px;
+}
+.description p{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.section4{
+  width: 80%;
+  margin: auto;
+}
+
+.section4 a{
+  margin-top: 20%;
+  color: yellow;
+  text-decoration: none;
+}
+.section4b {
+  flex-direction: row-reverse;
+  display: flex;
+  color: white;
+}
+.description1{
+  text-align: right;
+  margin-right: 30px;
+  display: block;
+  width: 30%;
+}
+.description1 h2{
+  font-size: 17px;
+}
+.description1 p{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+body {
+  background-color: black;
+}
 /*************** END MAIN ***************/
 
 /*************** ASIDE LEFT ***************/
