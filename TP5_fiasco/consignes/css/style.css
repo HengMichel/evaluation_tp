@@ -132,6 +132,7 @@ time, mark, audio, video {
 img{
     width:100%;
 }
+
 body{
     /* font-family:Arial;
     background-image: url("../img/fond.png"); */
@@ -147,14 +148,31 @@ body{
 }
 
 /*************** END GLOBAL ***************/
-
+s
 /*************** HEADER ***************/
+.header1{
+  display: flex;
+  margin-top: 500px;
+}
+
+.header1> nav {
+  width: 700px;
+  font-size: 15px;
+  float: right;
+  display: flex;
+  list-style-type: none;
+  color: rgb(182, 179, 179);
+  justify-content: space-evenly;
+}
 .logo{
+  
   text-align: left;
   margin-top: 40px;
   color: rgb(182, 179, 179);
   font-size: 15px;
+  display: flex;
 }
+
 header {
   margin: auto;
   color: rgb(182, 179, 179);
@@ -162,21 +180,12 @@ header {
   width: 1400px;
   height: 610px;
 }
-header , h3{
+header>h3{
   margin-top: 30px;
   text-align: center;
   color: yellow;
   font-family : 'Dancing Script', cursive ;}
   /*************** NAV ***************/
-header> nav {
-  font-size: 15px;
-  justify-content: space-between;
-  justify-content: right;
-  display: flex;
-  text-align: right;
-  list-style-type: none;
-  color: rgb(182, 179, 179);
-}
 /*************** END NAV ***************/
 header ,li , a :nth-child(2) :nth-child(4){
   justify-content: space-between;
