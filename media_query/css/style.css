@@ -210,8 +210,8 @@ img {
   width: 1440px;
   /* pour centrer la page dans le navigateurs*/
   margin: auto;
-  /* box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: #fff; */
+  box-shadow: 0 0 10px rgba(52, 113, 245, 0.5);
+    background-color: #54497e;
 }
 
 /*************** END GLOBAL ***************/
@@ -241,7 +241,10 @@ figure{
 }
 
 .figure{
-  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
 }
 .figure img{
   width: 100%;
@@ -328,6 +331,60 @@ figcaption p {
   .container{
     width: 100%;
   }
+  
+  figure{
+    width: 350px;
+    height: 350px;
+    position: relative;
+  }
+  
+  .figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+  }
+  .figure img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  
+  }
+  .date {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top : 20px;
+    right: 20px;
+  }
+  .date p {
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .photo{
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  
+  } .photo p {
+    background-color: rgb(230, 195, 2);
+    width: 80px;
+    padding: 10px;
+  }
+  figcaption p {
+    background-color: transparent;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(230, 195, 2);
+  
+  }
+  
   .allCake > div {
     width: 300px;
     height: 300px;
@@ -341,6 +398,61 @@ figcaption p {
  header {
   display: none;
  }
+ figure{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.figure{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+}
+.figure img{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+}
+.date {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top : 20px;
+  right: 20px;
+}
+.date p {
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 50%;
+}
+.photo{
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+} .photo p {
+  /* display: none; */
+  background-color: rgb(230, 195, 2);
+  width: 80px;
+  padding: 10px;
+}
+figcaption p {
+  display: none;
+  /* background-color: transparent;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(230, 195, 2); */
+}
+
 
  .allCake{
   display: flex;
@@ -362,15 +474,67 @@ figcaption p {
   header {
     display: none;
    }
+
+   figure{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .figure{
+    justify-content: center;
+    height: 100%;
+  }
+  .figure img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  
+  }
+  .date {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top : 20px;
+    right: 20px;
+  }
+  .date p {
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .photo{
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  
+  } .photo p {
+    /* display: none; */
+    background-color: rgb(230, 195, 2);
+    width: 90px;
+    padding: 10px;
+  }
+  figcaption p {
+    display: none;
+    background-color: transparent;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(230, 195, 2);
+  }
+
+
+
    .allCake{
     justify-content: center;
     /* flex-wrap: wrap; */
    }
    .allCake>div{
     margin: 5px;
-    padding: 0;
     width: 100%;
-    /* height: 500px; */
     height: 100%;
   
    }
