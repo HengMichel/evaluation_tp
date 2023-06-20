@@ -138,8 +138,9 @@ body{
   
 }
 .container{
-    /* width:1000px; */
-    /*margin:0 auto;pour centrer la page dans le navigateurs*/
+    width:1440px;
+    /* pour centrer la page dans le navigateurs*/ 
+    margin:0 auto;
     /* box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: #fff; */
 }
@@ -148,10 +149,8 @@ body{
 
 /*************** HEADER ***************/
 header{
-    width: 1440px;
     height: 750px;
     background-image: url(../img/chartreux.jpg);
-    margin: auto;
 }
 
 /*************** END HEADER ***************/
@@ -171,14 +170,19 @@ header{
 
 /*************** SECTION 1 ***************/
 .allCake{
+  display: block;
     margin: auto;
-
+    
+}
+.tarteCitron{
+  min-height: 350px;
+  max-width: 350px;
+}
+.gateau2{
+  min-height: 350px;
+  min-width: 350px;
 }
 
-.gateau{
-    width: 35
-    0px;
-}
 /*************** END SECTION 1 ***************/
 
 /*************** SECTION 2 ***************/
