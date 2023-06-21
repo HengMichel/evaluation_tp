@@ -217,7 +217,9 @@ img {
 /*************** END GLOBAL ***************/
 
 /*************** HEADER ***************/
-
+.img2{
+  display: none;
+}
 
 /*************** END HEADER ***************/
 
@@ -236,20 +238,24 @@ img {
 /*************** SECTION 1 ***************/
 figure{
   width: 350px;
-  height: 350px;
   position: relative;
+  margin-bottom: 100px;
+  /* margin: 0 20px 100px 20px; */
+  /* margin: 0 20px 0px; */
+  margin-right: 20px;
+  margin-left: 20px;
 }
+
 
 .figure{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  height: 500px;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 .figure img{
   width: 100%;
-  height: 100%;
-  padding: 10px;
 
 }
 .date {
@@ -280,7 +286,6 @@ figure{
   padding: 10px;
 }
 figcaption p {
-  background-color: transparent;
   font-size: 15px;
   text-align: center;
   color: rgb(230, 195, 2);
@@ -331,25 +336,28 @@ figcaption p {
   .container{
     width: 100%;
   }
-  
-  figure{
+  .img1{
+    display: none;
+  }
+  .img2{
+    display: block;
+  }
+  /* figure{
     width: 350px;
-    height: 350px;
     position: relative;
+    
   }
   
   .figure{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 500px;
   }
   .figure img{
     width: 100%;
     height: 100%;
-    padding: 10px;
   
-  }
+  } */
   .date {
     color: white;
     text-align: center;
@@ -378,7 +386,6 @@ figcaption p {
     padding: 10px;
   }
   figcaption p {
-    background-color: transparent;
     font-size: 15px;
     text-align: center;
     color: rgb(230, 195, 2);
@@ -395,9 +402,11 @@ figcaption p {
 }
 
 @media (max-width: 960px) {
- header {
+ header{
   display: none;
  }
+ 
+
  figure{
   display: flex;
   width: 200px;
@@ -440,17 +449,14 @@ figcaption p {
   left: 20px;
 
 } .photo p {
-  /* display: none; */
   background-color: rgb(230, 195, 2);
   width: 80px;
   padding: 10px;
 }
 figcaption p {
-  display: none;
-  /* background-color: transparent;
   font-size: 15px;
   text-align: center;
-  color: rgb(230, 195, 2); */
+  color: rgb(230, 195, 2); 
 }
 
 
@@ -487,7 +493,6 @@ figcaption p {
   .figure img{
     width: 100%;
     height: 100%;
-    padding: 10px;
   
   }
   .date {
@@ -513,14 +518,11 @@ figcaption p {
     left: 20px;
   
   } .photo p {
-    /* display: none; */
     background-color: rgb(230, 195, 2);
     width: 90px;
     padding: 10px;
   }
   figcaption p {
-    display: none;
-    background-color: transparent;
     font-size: 25px;
     text-align: center;
     color: rgb(230, 195, 2);
