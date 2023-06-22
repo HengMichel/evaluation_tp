@@ -211,7 +211,7 @@ img {
   /* pour centrer la page dans le navigateurs*/
   margin: auto;
   box-shadow: 0 0 10px rgba(52, 113, 245, 0.5);
-    background-color: #54497e;
+  background-color: #54497e;
 }
 
 /*************** END GLOBAL ***************/
@@ -237,7 +237,7 @@ img {
 
 /*************** SECTION 1 ***************/
 figure{
-  width: 350px;
+  width: 300px;
   position: relative;
   margin-bottom: 100px;
   /* margin: 0 20px 100px 20px; */
@@ -245,18 +245,12 @@ figure{
   margin-right: 20px;
   margin-left: 20px;
 }
-
-
 .figure{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 35px;
   margin-bottom: 35px;
-}
-.figure img{
-  width: 100%;
-
 }
 .date {
   color: white;
@@ -279,8 +273,8 @@ figure{
   position: absolute;
   bottom: 20px;
   left: 20px;
-
-} .photo p {
+}
+.photo p {
   background-color: rgb(230, 195, 2);
   width: 80px;
   padding: 10px;
@@ -289,9 +283,19 @@ figcaption p {
   font-size: 15px;
   text-align: center;
   color: rgb(230, 195, 2);
-
 }
-
+.img4{
+  display: none;
+}
+.img6{
+  display: none;
+}
+.img8{
+  display: none;
+}
+.img10{
+  display: none;
+}
 
 /*************** END SECTION 1 ***************/
 
@@ -303,16 +307,32 @@ figcaption p {
 }
 .allCake > div {
   width: 300px;
-  height: 300px;
-  /* border: 2px #ffd001 solid; */
-  padding: 10px;
+  padding: 20px;
 }
-
-.allCake img {
-  height: 100%;
-  margin: 5px;
+.img12{
+  display: none;
 }
-
+.img14{
+  display: none;
+}
+.img16{
+  display: none;
+}
+.img18{
+  display: none;
+}
+.img20{
+  display: none;
+}
+.img22{
+  display: none;
+}
+.img24{
+  display: none;
+}
+.img26{
+  display: none;
+}
 
 /*************** END SECTION 2 ***************/
 
@@ -342,22 +362,79 @@ figcaption p {
   .img2{
     display: block;
   }
-  /* figure{
-    width: 350px;
-    position: relative;
-    
+  .img3{
+    display: none;
+  }
+  .img4{
+    display: block;
+  }
+  .img5{
+    display: none;
+  }
+  .img6{
+    display: block;
+  }
+  .img7{
+    display: none;
+  }
+  .img8{
+    display: block;
+  }
+  .img9{
+    display: none;
+  }
+  .img10{
+    display: block;
+  }
+  .img11{
+    display: none;
+  }
+  .img12{
+    display: block;
+  }
+  .img13{
+    display: none;
+  }
+  .img14{
+    display: block;
+  }
+  .img15{
+    display: none;
+  }
+  .img16{
+    display: block;
+  }
+  .img17{
+    display: none;
+  }
+  .img18{
+    display: block;
+  }
+  .img19{
+    display: none;
+  }
+  .img20{
+    display: block;
+  }
+  .img21{
+    display: none;
+  }
+  .img22{
+    display: block;
+  }
+  .img23{
+    display: none;
+  }
+  .img24{
+    display: block;
+  }
+  .img25{
+    display: none;
+  }
+  .img26{
+    display: block;
   }
   
-  .figure{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .figure img{
-    width: 100%;
-    height: 100%;
-  
-  } */
   .date {
     color: white;
     text-align: center;
@@ -392,25 +469,15 @@ figcaption p {
   
   }
   
-  .allCake > div {
-    width: 300px;
-    height: 300px;
-  }
-  .allCake img {
-  height: 100%;
-  }
 }
 
 @media (max-width: 960px) {
  header{
   display: none;
  }
- 
 
  figure{
-  display: flex;
   width: 200px;
-  height: 200px;
   position: relative;
 }
 
@@ -418,14 +485,8 @@ figcaption p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 100%;
 }
-.figure img{
-  width: 100%;
-  height: 100%;
-  padding: 10px;
 
-}
 .date {
   color: white;
   text-align: center;
@@ -468,12 +529,9 @@ figcaption p {
   margin: 5px;
   padding: 0;
   width: 200px;
-  height: 200px;
 
  }
- .allCake img{
-  height: 100%;
- }
+
 }
 
 @media(max-width: 760px){
@@ -483,18 +541,14 @@ figcaption p {
 
    figure{
     width: 100%;
-    height: 100%;
     position: relative;
   }
   .figure{
     justify-content: center;
-    height: 100%;
-  }
-  .figure img{
     width: 100%;
-    height: 100%;
-  
+
   }
+
   .date {
     color: white;
     text-align: center;
@@ -519,7 +573,7 @@ figcaption p {
   
   } .photo p {
     background-color: rgb(230, 195, 2);
-    width: 90px;
+    width: 100%;
     padding: 10px;
   }
   figcaption p {
@@ -528,20 +582,14 @@ figcaption p {
     color: rgb(230, 195, 2);
   }
 
-
-
    .allCake{
     justify-content: center;
-    /* flex-wrap: wrap; */
    }
+
    .allCake>div{
     margin: 5px;
-    width: 100%;
-    height: 100%;
-  
+    width: 100%;  
    }
-   .allCake img{
-    height: 100%;
-   }
+   
 }
 /*************** END MEDIAQUERY ***************/
