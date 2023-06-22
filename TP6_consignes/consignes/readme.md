@@ -31,7 +31,7 @@
 ## 4- Polices & couleurs à utiliser
 - POLICE(S)
      - Montserrat
-     - fontawesome pour les icones
+     -   pour les icones
 - COULEUR(S)
      - bleu pour les boutons : #1C5F81
      - noir et blanc pour le reste
