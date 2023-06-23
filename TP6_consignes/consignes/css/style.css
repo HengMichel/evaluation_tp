@@ -155,7 +155,6 @@ header{
   
 }
 .img2{
-  /* width: 200px; */
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -167,6 +166,11 @@ header{
 /*************** NAV ***************/
 nav {
   position: relative;
+  opacity: 0.5;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 50px;
 }
 
 nav::before {
@@ -176,26 +180,30 @@ nav::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Couleur semi-transparente */
+  background-color: rgba(0, 0, 0, 0.9); 
+  /* Couleur semi-transparente */
   z-index: -1;
 }
 
-ul{
+.ul1{
   display: flex;
   text-align: center;
   list-style-type: none;
   justify-content: space-evenly;
-  color: white;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 40px;
+}
+.ul1 :focus{
+  color: rgb(141, 174, 79);
 }
 .button{
   color: white;
-  text-decoration: white;
   background-color: #1C5F81;
   width: 200px;
   height: 30px; 
   text-align: center;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 /*************** END NAV ***************
@@ -214,7 +222,12 @@ ul{
 .sect1a p{
   padding-top: 20px;
 }
-
+figcaption{
+  font-size: 25px;
+  color: fuchsia;
+  font-weight: bold;
+  text-align: center;
+}
 
 .sect1b p{
   justify-content: center;
@@ -225,15 +238,15 @@ ul{
 }
 .button2{
   color: white;
-  text-decoration: white;
   background-color: #1C5F81;
-  width: 120px;
-  height: 30px; 
+  width: 150px;
+  height: 35px; 
   text-align: center;
   justify-content: center;
   margin: auto;
-  padding-top: 5px;
+  padding-top: 7px;
   margin-top: 20px;
+  font-size: 10px;
   
 }
 /*************** END SECTION 1 ***************/
@@ -256,10 +269,11 @@ ul{
 .creditCard{
   width: 50px;
   display: flex;
+  margin-right: 15px;
 }
-.creditCard h1{
+.creditCard h2{
   margin: auto;
-  font-size: 38px;
+  font-size: 30px;
   margin-left: 15px;
 }
 .tarif {
@@ -273,7 +287,7 @@ ul{
   height: 50px; 
   text-align: center;
   justify-content: left;
-  padding-top: 5px;
+  padding-top: 10px;
   margin-top: 20px;
   
 }
@@ -282,65 +296,99 @@ ul{
   padding-top: 100px;
   display: block;
 }
+.sect2b>p{
+  padding-top: 20px;
+}
 .clock{
-  width: 50px;
-  display: block;
+  display: flex;
   justify-content: left;
 }
-/* .clock1{
-  display: flex;
-} */
-
+.clock1{
+  width: 25px;
+  margin-right: 15px;
+}
 .sect3{
   justify-content: space-evenly;
   width: 500px;
   
 }
 .sect3a{
-  padding-top: 60px;
+  display: flex;
+  padding-top: 100px;
 }
 .bus{
   width: 50px;
   display: flex;
+  margin-right: 15px;
 }
-.bus h1{
+.bus h2{
   margin: auto;
-  font-size: 25px;
-  justify-content: end;
-  text-align: right;
-  margin-right: 0;
-  margin-top: 20px;
-  
-  
+  font-size: 30px;
+  padding-top: 150px;
+    
 }
 
-.bus2>img{
-  width: 50px;
-  justify-content: center;
+.bus2{
+  text-align: left;
+  padding-top: 40px;
 }
-
-
-
-
-
 
 .m13{
   width: 50px;
 }
-/*************** END MAIN ***************/
-
 /*************** END SECTION 2 ***************/
 
 /*************** SECTION 3 ***************/
-
+.logos h2{
+  text-align: center;
+  padding-top: 150px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.logos2{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.tf1{
+  width: 100px;
+}
+.bfm{
+  width: 100px;
+}
+.jdd{
+  width: 100px;
+}
+.rtl{
+  width: 100px;
+}
 /*************** END SECTION 3 ***************/
 
-/*************** ASIDE RIGHT ***************/
-
-/*************** END ASIDE RIGHT ***************/
+/*************** END MAIN ***************/
 
 /*************** FOOTER ***************/
+footer{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
 
+.sideL{
+  list-style-type: none;
+  justify-content: left;
+  text-align: left;
+  display: block;
+  font-size: 10px;
+  color: white;
+  padding-top: 100px;
+}
+.last{
+  width: 300px;
+}
 /*************** END FOOTER ***************/
 
 /*************** MEDIAQUERY ***************/
@@ -349,23 +397,48 @@ ul{
   header {
     /* background-color: #e68f15; */
   }
-  header h2 {
-    font-size: 14px;
-  }
+ 
 }
 
 @media (max-width: 960px) {
   header {
-    /* background-color: #a6f28b; */
+    background-image: none;
+    background-color: rgb(141, 174, 79);;
   }
-  .logo1 {
-    /* display: none; */
+  nav {
+    width: 100%;
   }
-  .logo2 {
-    /* display: inline; */
+  .img2 {
+    display: none;
   }
-  header h2 {
-    font-family: "Roboto-Black";
+  .container{
+    width: 100%;
+    display: block;
+  }
+  .sect21 {
+    display: block;
+    width: 100%;
+  }
+  .sect2{
+    width: 100%;
+    display: block;
+  }
+  .sect3{
+    width: 100%;
+    display: block;
+  }
+  footer{
+    display: block;
+    width: 100%;
+  }
+  .sideL{
+    width: 100%;
+    display: block;
+  }
+}
+@media(max-width: 760px){
+  header{
+    display: none;
   }
 }
 
