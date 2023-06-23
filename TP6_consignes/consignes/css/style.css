@@ -306,6 +306,7 @@ ul{
   justify-content: end;
   width: 400px;
   text-align: right;
+  margin-right: 0;
   
   
 }
