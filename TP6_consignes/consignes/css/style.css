@@ -3,24 +3,7 @@
 /* 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
 
-@font-face {
-  font-family: "Roboto";
-  src: url("fonts/Roboto-Regular.ttf");
-}
 
-@font-face {
-  font-family: "Roboto-Italic";
-  src: url("fonts/Roboto-Italic.ttf");
-}
-
-@font-face {
-  font-family: "Roboto-Black";
-  src: url("fonts/Roboto-Black.ttf");
-}
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-}
 
 
 /* @font-face {
@@ -138,9 +121,7 @@ img{
     width:100%;
 }
 body{
-    /* font-family:Arial;
-    background-image: url("../img/fond.png"); */
-  
+  font-family: 'Montserrat', sans-serif;
 }
 .container{
     width:900px;
@@ -149,6 +130,8 @@ body{
     /* box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: #fff; */
 }
+
+
 
 /*************** END GLOBAL ***************/
 
@@ -256,15 +239,19 @@ ul{
 /*************** END SECTION 1 ***************/
 
 /*************** SECTION 2 ***************/
-
+.sect21{
+  width: 1100px;
+  margin: auto;
+  justify-content: center;
+}
 .sect2{
-  width: 1000px;
   display: flex;
+  justify-content: space-between;
 }
 .sect2a{
-  width: 500px;
   padding-top: 100px;
   display: block;
+  width: 500px;
 }
 .creditCard{
   width: 50px;
@@ -282,8 +269,8 @@ ul{
   color: white;
   text-decoration: white;
   background-color: #1C5F81;
-  width: 160px;
-  height: 30px; 
+  width: 200px;
+  height: 50px; 
   text-align: center;
   justify-content: left;
   padding-top: 5px;
@@ -292,26 +279,52 @@ ul{
 }
 
 .sect2b {
-  width: 500px;
   padding-top: 100px;
   display: block;
 }
-.bus img{
+.clock{
+  width: 50px;
+  display: block;
+  justify-content: left;
+}
+/* .clock1{
+  display: flex;
+} */
+
+.sect3{
+  justify-content: space-evenly;
+  width: 500px;
+  
+}
+.sect3a{
+  padding-top: 60px;
+}
+.bus{
   width: 50px;
   display: flex;
 }
 .bus h1{
   margin: auto;
-  font-size: 38px;
+  font-size: 25px;
   justify-content: end;
-  width: 400px;
   text-align: right;
   margin-right: 0;
+  margin-top: 20px;
   
   
 }
 
-.clock{
+.bus2>img{
+  width: 50px;
+  justify-content: center;
+}
+
+
+
+
+
+
+.m13{
   width: 50px;
 }
 /*************** END MAIN ***************/
