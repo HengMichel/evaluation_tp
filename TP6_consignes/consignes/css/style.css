@@ -127,8 +127,7 @@ body{
     width:900px;
     margin:0 auto;
     /*pour centrer la page dans le navigateurs*/
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: #fff; */
+    
 }
 
 
@@ -195,6 +194,10 @@ nav::before {
 }
 .ul1 :focus{
   color: rgb(141, 174, 79);
+}
+.ul1 li,a {
+  color: white;
+  text-decoration: none;
 }
 .button{
   color: white;
@@ -406,7 +409,7 @@ footer{
     background-color: rgb(141, 174, 79);;
   }
   nav {
-    width: 100%;
+    display: none;
   }
   .img2 {
     display: none;
