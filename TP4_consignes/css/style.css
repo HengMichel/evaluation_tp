@@ -1,248 +1,353 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  
-  vertical-align: baseline;
-}
+/* https://fonts.google.com/ */
 
-* {
-  box-sizing: border-box;
-  
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
+
+/* 
+Une mise en page flexible doit avoir un élément parent avec la propriété display définie sur flex.
+Les éléments enfants directs du conteneur flexible deviennent automatiquement des éléments flexibles.
+
+.flexbox{
+display: flex;
+
+Flex Container : 
+flex-direction: column;
+flex-direction: column-reverse;
+flex-direction: row;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+flex-wrap: nowrap;
+flex-wrap: wrap-reverse;
+flex-flow: row wrap;
+justify-content: center;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly;
+
+height: 200px; à définir absolument une hauteur quand on utilise "align-items"
+align-items: center;
+align-items: flex-start;
+align-items: flex-end;
+align-items: stretch;
+align-items: baseline;
+
+flex-wrap: wrap;
+align-content: space-between;
+
+flex-wrap: wrap;
+align-content: space-around;
+
+flex-wrap: wrap;
+align-content: stretch;
+
+flex-wrap: wrap;
+align-content: center;
+align-content: space-evenly;
+
+flex-wrap: wrap;
+align-content: flex-start;
+
+flex-wrap: wrap;
+align-content: flex-end;
+
+justify-content: center;
+align-items: center;
+
+Child Elements (Items) :
+display: flex;
+align-items: stretch; ->
+pour un item :
+order
+
+display: flex;
+align-items: stretch; ->
+pour un item :
+order
+
+display: flex;
+align-items: stretch;
+
+flex-grow
+
+display: flex;
+align-items: stretch;
+flex-shrink
+
+
+flex-basis
+flex : auto // On l'utilse pour les enfants
+align-self
+
+
+flex-flow
+
+}
+*/
+
+/*************** GLOBAL ***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;/*pour garder la meme taille*/
 }
 img{
-  width: 100%;
+    width:100%;
 }
+/* body{
+  font-family: 'Montserrat', sans-serif;
+} */
+.container{
+    width:1200px;
+    margin: auto;
+    /*pour centrer la page dans le navigateurs*/
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*************** END GLOBAL ***************/
+
+/*************** HEADER ***************/
 
 header {
   display: flex;
-  justify-content: space-evenly;
-  /* align-items: baseline; */
+  justify-content: space-between;
+  margin: auto;
+  /* margin-bottom: 40px; */
+}
+.sideL{
+  display: flex;
+  padding-top: 20px;
 }
 .logo {
-  width: 10%;
+  width: 35px;
   display: flex;
   align-items: center;
-  transition: ease-out 3s;
+  /* transition: ease-out 10s; */
   transform: rotate(360deg);
+  padding-bottom: 70px;
+  margin-left: 20px;
+  padding-top: 10px;
 }
-
-.header{
-  font-size: 50px;
-  padding-top: 100px;
-  text-align: left;
-  width: 100%;
-
+.myShop {
+  display: block;
+  justify-content: center;
+  margin-top: -20px;
 }
-h2 {
-  /* width: 33%; */
-  /* justify-content: center; */
-  text-align: left;
-  display: flex;
+.myShop h1{
+  font-size: 70px;
+  font-weight: lighter;
+  padding-left: 30px;
 }
-.header p {
-  display: flex;
-  /* width: 10%;
-  font-size: 2px;
-  font-weight: 2px; */
+.myShop p {
   font-size: 20px;
   color: rgb(224, 36, 168);
+  text-align: center;
+  justify-content: center;
+  font-weight: bolder;
+  padding-left: 45px;
 }
-
-.help a {
-  color: bleu rgb(103, 220, 255);
+.help h2 {
+  font-size: 35px;
+  font-weight: lighter;
+  color: rgb(103, 220, 255); 
+  padding-top: 10px;
 }
-
-
-/* .article h2{
-    color: white;
-} */
-
-/* h2{
-    margin: 0;
-} */
-/*  */
-
+.help p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(103, 220, 255);
+  position: absolute;
+  top: 55px;
+  right: 520px;
+}
+.aide{
+  position: relative;
+}
+.compte{
+  background-color: rgb(103, 220, 255);
+  /* border: 0 0 0 10px; */
+  color: white;
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+  width: 380px;
+}
+.compte2{
+  display: flex;
+  
+}
 .article {
-  width: 100%;
-  height: 100%;
+  width: 70px;
   display: flex;
 }
-.nav ul li :first-child {
-  background-color: rgb(224, 36, 168);
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; */
+.panier{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 17px;
+  padding-left: 25px;
+  
 }
-ul li {
-  flex: auto;
-  /* permet d'avoir les cases de la meme dimension */
+.border1{
+  width: 100px;
 }
-.nav ul {
-  height: 40px;
-  background-color: rgb(103, 220, 255);
+/*************** END HEADER ***************/
+
+/*************** NAV ***************/
+nav{
   display: flex;
   justify-content: space-around;
-  list-style: none;
-  align-items: center;
 }
-
-.nav li {
-  width: 100px;
-  /* height: 100px; */
+nav li {
+  display: inline-block;
+  text-align: center;
+  /* background-color: rgb(103, 220, 255); */
+}
+nav a {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  /* background-color: rgb(103, 220, 255); */
+  list-style: none;
+  text-decoration-line: none;
+}
+nav a{
+  /* permet d'avoir les cases de la meme dimension */
+  flex: auto;
+  display: flex;
+  list-style-type: none;
+  list-style: none;
+  /* /* padding-top: 10px; */
+  /* padding-bottom: 10px;  */
+  justify-content: space-around;
+  text-align: center;
   color: white;
 }
-.nav a {
-  list-style-type: none;
+nav a :hover{
+  display: inline-block;
+  /* background-color:rgb(224, 36, 168);  */
 }
 
-.bandeau img{
-  width: 100%;
+.pink {
+  background-color: rgb(224, 36, 168);
+}
+.pink :hover{
+  background-color: rgb(103, 220, 255);
+}
+.blue1 .blue2 .blue3 .blue4 .blue5 {
+  background-color:rgb(224, 36, 168); 
+
 }
 
+
+/*************** END NAV ***************
+
+/*************** MAIN ***************/
 body {
   background-image: url(../img/fond.png);
 }
+/*************** SECTION 1 ***************/
+.bandeau img{
+  margin: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/*************** END SECTION 1 ***************/
+
+/*************** SECTION 2 ***************/
 section {
   display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
 }
-.sect1{
-  height: 150px;
-  justify-content: space-between;
-  
-}
+
 .paiement {
-  margin-left: 15px;
-  width: 20%;
-  height: 50%;
-  display: block;
-  border-right: solid 2px white (222,222,222);
+  /* display: block; */
+  margin: auto;
+  /* border-right: solid 2px white (222,222,222); */
 }
 .paiement p {
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 .paiement h2 {
   color: rgb(103, 220, 255);
 }
+.imgCb{
+  width: 200px;
+}
+hr{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .description {
-  width: 40%;
+  margin: auto;
 }
 .description h2 {
   color: rgb(103, 220, 255);
 }
 .description p {
-  margin: 20px 0;
+  margin-top: 20px;
 }
 .service {
-  margin-right: 15px;
-  justify-content: space-around;
-  width: 20%;
+  margin: auto;
 }
 .service h2 {
   color: rgb(103, 220, 255);
 }
 .camion {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
+  margin: auto;
 }
 .camion img{
-  margin-left: 0;
+  width: 50px;
 }
 .camion p  {
+  margin: auto;
   margin-left: 10px;
-  margin-top: 10px;
 }
-.chan {
-  height: 20%;
+.chan{
   display: flex;
 }
-.chan p {
-  margin-top: 7px;
-  margin-left: 10px;
+.chan img{
+  width: 50px;
 }
-/* .bonplan{
-  
-  
-} */
+.chan p {
+  margin: auto;
+  margin-left: 10px;
+
+}
+/*************** END SECTION 2 ***************/
+
+/*************** SECTION 3 ***************/
+
 .bonplan {
   display: flex;
   align-items: center;
@@ -256,33 +361,65 @@ section {
 
 }
 
-/* **********************************memo tips*************************************************** */
-/* Besoin d'aide pour caler le numero dans l'image
-background:url(../IMAGE.png) center transparent no repeat;
-width:170px;
-height: 23px; */
-/* .numero{
-  padding: 3px 0 0 55px;
-  + la color blue
-} */
+/*************** END SECTION 3 ***************/
 
-/* mon compte{
-  background-color: le blue du tp;
-  width: 300px;
-  height: 20px;
-  text-align: center;
-  color: white;
-} */
+/*************** END MAIN ***************/
 
-/* image panier + texte dans une div + text-align +
- space btwin + un margin top de 3px color white */
+/*************** FOOTER ***************/
 
-/* le background de header avec l'image trait */
+/*************** END FOOTER ***************/
 
+/*************** MEDIAQUERY ***************/
 
-/* ***************************Le Responsive************************** */
-@media (max-width : 1400px) {
-  .container{ 
+@media (max-width: 1400px) {
+  header {
+    /* background-color: #e68f15; */
+  }
+ 
+}
+
+@media (max-width: 960px) {
+  header {
+    background-image: none;
+    background-color: rgb(141, 174, 79);;
+  }
+  nav {
+    display: none;
+  }
+  .img2 {
+    display: none;
+  }
+  .container{
+    width: 100%;
+    display: block;
+  }
+  .sect21 {
+    display: block;
     width: 100%;
   }
+  .sect2{
+    width: 100%;
+    display: block;
+  }
+  .sect3{
+    width: 100%;
+    display: block;
+  }
+  footer{
+    display: block;
+    width: 100%;
+  }
+  .sideL{
+    width: 100%;
+    display: block;
+  }
 }
+@media(max-width: 760px){
+  header{
+    display: none;
+  }
+}
+
+/*************** END MEDIAQUERY ***************/
+
+
