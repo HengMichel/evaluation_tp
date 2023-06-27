@@ -1,0 +1,513 @@
+@font-face {
+  font-family: "Liberation";
+  src: url(../font/LiberationSans-Bold-webfont.ttf);
+}
+@font-face {
+  font-family: "Liberation2";
+  src: url(../font/LiberationSans-Regular-webfont.ttf);
+}
+/* https://fonts.google.com/ */
+
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+
+/* @font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("fonts/Roboto-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("fonts/Roboto-Black.ttf");
+} */
+
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
+
+/* 
+Une mise en page flexible doit avoir un élément parent avec la propriété display définie sur flex.
+Les éléments enfants directs du conteneur flexible deviennent automatiquement des éléments flexibles.
+
+.flexbox{
+display: flex;
+
+Flex Container : 
+flex-direction: column;
+flex-direction: column-reverse;
+flex-direction: row;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+flex-wrap: nowrap;
+flex-wrap: wrap-reverse;
+flex-flow: row wrap;
+justify-content: center;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly;
+
+height: 200px; à définir absolument une hauteur quand on utilise "align-items"
+align-items: center;
+align-items: flex-start;
+align-items: flex-end;
+align-items: stretch;
+align-items: baseline;
+
+flex-wrap: wrap;
+align-content: space-between;
+
+flex-wrap: wrap;
+align-content: space-around;
+
+flex-wrap: wrap;
+align-content: stretch;
+
+flex-wrap: wrap;
+align-content: center;
+align-content: space-evenly;
+
+flex-wrap: wrap;
+align-content: flex-start;
+
+flex-wrap: wrap;
+align-content: flex-end;
+
+justify-content: center;
+align-items: center;
+
+Child Elements (Items) :
+display: flex;
+align-items: stretch; ->
+pour un item :
+order
+
+display: flex;
+align-items: stretch; ->
+pour un item :
+order
+
+display: flex;
+align-items: stretch;
+
+flex-grow
+
+display: flex;
+align-items: stretch;
+flex-shrink
+
+
+flex-basis
+flex : auto // On l'utilse pour les enfants
+align-self
+
+
+flex-flow
+
+}
+*/
+
+/*************** GLOBAL ***************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box; /*pour garder la meme taille*/
+}
+img {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(31, 30, 30);
+  font-family: Liberation2;
+  /* font-family:Arial;
+    background-image: url("../img/fond.png"); */
+  /* font-family: 'Montserrat', sans-serif; */
+}
+.container {
+  width: 1400px;
+  /* pour centrer la page dans le navigateurs */
+  margin: 0 auto;
+  background-color: #eceaea;
+}
+
+/*************** END GLOBAL ***************/
+
+/*************** HEADER ***************/
+header {
+  background-image: url("../img/background.jpg");
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.logo {
+  margin-left: 110px;
+}
+.sideL {
+  color: rgb(119, 118, 118);
+}
+.sideL h1 {
+  font-size: 90px;
+}
+.sideL {
+  font-size: 20px;
+}
+.sideL span {
+  color: #e68f15;
+}
+.sideL p {
+  margin-left: 120px;
+  margin-top: 20px;
+}
+.com {
+  font-size: 20px;
+  justify-content: right;
+}
+.sideR {
+  color: rgb(119, 118, 118);
+  text-align: right;
+  margin: auto;
+  margin-right: 100px;
+}
+.sideR ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.sideR li {
+  list-style: none;
+  margin: auto;
+  justify-content: space-between;
+}
+.sideR a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+}
+/*************** END HEADER ***************/
+
+/*************** NAV ***************/
+
+/*************** END NAV ***************
+
+/*************** MAIN ***************/
+/*************** SECTION 1 ***************/
+.gant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.img1 {
+  width: 500px;
+  color: black;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+  position: relative;
+}
+.img1 p {
+  font-weight: bolder;
+  text-align: center;
+}
+.buttonSell {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 180px;
+  text-align: center;
+}
+.buttonSell a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+}
+.botLine {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.next p {
+  font-size: 30px;
+}
+.trait br {
+  width: 100px;
+  height: 50px;
+  color: black;
+}
+.next span {
+  color: #e68f15;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+.solde {
+  background-color: black;
+  color: #e68f15;
+  font-size: 50px;
+  border-radius: 15px;
+  width: 140px;
+  position: absolute;
+  top: 10px;
+  right: -25px;
+}
+.img2 {
+  width: 500px;
+  color: black;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+}
+.img2 p {
+  font-weight: bolder;
+  text-align: center;
+}
+
+/*************** END SECTION 1 ***************/
+
+/*************** SECTION 2 ***************/
+
+/*************** END SECTION 2 ***************/
+
+/*************** END MAIN ***************/
+
+/*************** SECTION 3 ***************/
+
+/*************** END SECTION 3 ***************/
+
+/*************** NAV ***************/
+
+/*************** END NAV ***************
+
+/*************** FOOTER ***************/
+footer {
+  background-color: rgb(54, 54, 54);
+  position: relative;
+  padding-bottom: 100px;
+}
+footer ul {
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+  width: 500px;
+  height: 50px;
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  position: absolute;
+  left: 450px;
+  top: -25px;
+}
+
+.container2 {
+  width: 1400px;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  margin-left: 250px;
+  margin: auto;
+  padding-top: 50px;
+}
+.book {
+  text-align: center;
+}
+.book img {
+  width: 50px;
+  justify-content: center;
+}
+.truck {
+  text-align: center;
+}
+.truck img {
+  width: 50px;
+  justify-content: center;
+}
+.lock {
+  text-align: center;
+}
+.lock img {
+  width: 50px;
+  justify-content: center;
+}
+.pouce {
+  text-align: center;
+}
+.pouce img {
+  width: 50px;
+  justify-content: center;
+}
+hr {
+  width: 1400px;
+  color: rgb(102, 102, 102);
+  margin-top: 50px;
+}
+.logo2 {
+  text-align: center;
+  /* margin-left: 200px; */
+  margin-top: 30px;
+}
+.face {
+  width: 25px;
+}
+.twit {
+  width: 50px;
+}
+.link {
+  width: 50px;
+}
+.logo2 p {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+/*************** END FOOTER ***************/
+
+/*************** MEDIAQUERY ***************/
+
+@media (max-width: 1400px) {
+  header {
+    width: 1000px;
+    display: block;
+  }
+  .container {
+    width: 100%;
+    display: block;
+  }
+  footer {
+    width: 1100px;
+    display: block;
+  }
+}
+
+@media (max-width: 960px) {
+  header {
+    width: 800px;
+    display: block;
+  }
+  .container {
+    width: 100%;
+    display: block;
+  }
+  footer {
+    width: 800px;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    width: 100%;
+    display: block;
+  }
+  .container {
+    width: 100%;
+    display: block;
+  }
+  footer {
+    width: 100%;
+    display: block;
+  }
+}
+
+/*************** END MEDIAQUERY ***************/
