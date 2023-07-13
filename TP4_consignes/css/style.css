@@ -235,8 +235,6 @@ nav a {
   /* background-color: rgb(103, 220, 255); */
   list-style: none;
   text-decoration-line: none;
-}
-nav a{
   /* permet d'avoir les cases de la meme dimension */
   flex: auto;
   display: flex;
@@ -366,6 +364,15 @@ hr{
 /*************** END MAIN ***************/
 
 /*************** FOOTER ***************/
+.nav2>ul{
+  display: flex;
+  list-style: none;
+  text-decoration-line: none;
+  justify-content: space-evenly;
+  background-color: rgb(103, 220, 255);
+  color: white;
+  padding: 10px;
+}
 
 /*************** END FOOTER ***************/
 
