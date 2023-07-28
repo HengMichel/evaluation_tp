@@ -1,0 +1,217 @@
+body {
+    font-family: 'Caveat Brush', cursive;
+}
+
+img {
+    width: 100%;
+}
+
+.arrow {
+    border: solid rgba(229, 63, 111, 0.7);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+header {
+    background-image: url(../img/fond.png);
+    height: 600px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cerf {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.cerf img {
+    width: 200px;
+}
+
+.triangle {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    background-color: rgba(229, 63, 111, 0.7);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 41%;
+    top: 70%;
+}
+
+.relative {
+    position: relative;
+}
+
+hr {
+    width: 30px;
+    height: 15px;
+    background-color: #e53f6f;
+}
+
+.hdr {
+    width: 30px;
+    height: 10px;
+    background-color: #e53f6f;
+}
+
+h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1>span {
+    font-size: 20px;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+section {
+    display: flex;
+}
+
+.txt1 {
+    width: 40%;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.img1 {
+    width: 60%;
+    /* inverser limage */
+    transform: rotateY(180deg);
+}
+
+.rose {
+    color: mediumvioletred;
+}
+
+.title {
+    color: red;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+.savon {
+    width: 70%;
+    margin: 0px;
+}
+
+.savonet {
+    height: 100%;
+}
+
+.graines img {
+    width: 160px;
+}
+
+.txt2 {
+    text-align: center;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.sec2 {
+    display: flex;
+    width: 100%;
+}
+
+.margin {
+    margin: 30px;
+}
+
+.txt3 {
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.sec1 img,
+.sec2 img {
+    height: 100%;
+}
+
+.graines2 {
+    width: 200px;
+    margin: auto;
+}
+
+.oeuf {
+    width: 100%;
+}
+
+footer {
+    background-image: url(../img/motif.jpg);
+    text-transform: uppercase;
+    padding: 100px 50px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.ftr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ftr h2 {
+    text-align: center;
+}
+
+.icon {
+    color: #e53f6f;
+}

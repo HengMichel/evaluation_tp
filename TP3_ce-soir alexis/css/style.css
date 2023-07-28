@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.img2 {
+    height: 100%;
+    /* height: 180px; */
+    width: 50%;
+}
+
+.img3 {
+    /* height: 180px; */
+    width: 50%;
+    height: 100%;
+}
+
+
+/* pour initialiser toutes les  balises sut tous les nagigateurs */
+
+body {
+    font-family: 'Caveat Brush', cursive;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+header {
+    background-image: url(../img/fond.png);
+    padding-bottom: 54px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+header img {
+    height: 295px;
+    display: flex;
+}
+
+.pv {
+    height: 1000px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Caveat Brush", cursive;
+    font-size: 30px;
+}
+
+.asperge {
+    /* transform: scaleX(-1); on peut utiliser aussi scaleX avec valeur -1 pour ne pas augmenter la taille et juste changer le sens de l'image*/
+    transform: rotateY(180deg);
+    /*transformer l'image en rotation sur l'axe Y de 180 degre*/
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-image: linear-gradient( to right, red, orange, yellow, green, blue, indigo, purple);
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c1 {
+    align-items: center;
+    display: flex;
+}
+
+.i1 {
+    transform: rotateY(180deg);
+}
+
+.sec1 {
+    width: 40%;
+    padding: 35px;
+}
+
+.sec2 {
+    width: 60%;
+    height: 100%;
+}
+
+.sec5 {
+    width: 30%;
+    padding: 35px;
+}
+
+.sec6 {
+    width: 70%;
+    height: 100%;
+}
+
+.sec3 {
+    width: 40%;
+    padding: 35px;
+}
+
+footer {
+    background-image: url(../img/motif.jpg);
+    padding-bottom: 54px;
+    padding: 50px;
+}
+
+.icon {
+    padding-top: 80px;
+    color: mediumvioletred;
+}
+
+hr {
+    height: 10px;
+    background-color: mediumvioletred;
+    width: 30px;
+}
+
+.hr {
+    height: 10px;
+    background-color: mediumvioletred;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.ba1 {
+    color: mediumvioletred;
+}
+
+.triangle {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 120px solid rgba(229, 63, 111, 0.7);
+    border-left: 120px solid transparent;
+    position: relative;
+    /* left: 0px; */
+    bottom: 134px;
+    left: calc(50% - 565px);
+}
+
+.triangle img {
+    width: 250px;
+}
+
+.fleche {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-right: 0.3em solid #e53f6f;
+    border-top: 0.3em solid #e53f6f;
+    transform: rotate(125deg) skewY(20deg);
+    position: relative;
+    left: calc(50% - 650px);
+}
+
+.logo h1,
+.logo h3 {
+    /*selectionner h1 qui est sous la classe logo*/
+    font-size: 45px;
+    text-transform: uppercase;
+    /*mettre en majuscule le texte du logo*/
+    font-style: italic;
+    letter-spacing: -2px;
+}
+
+h1 span,
+h3 span {
+    /*selectionner span qui est sous h1*/
+    font-size: 27px;
+    font-style: italic;
+    position: relative;
+    bottom: 11px;
+    left: 5px;
+    text-decoration-line: underline;
+}
+
+
+/* @media (max-width: 1400px) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+} */
