@@ -1,12 +1,3 @@
-/* https://fonts.google.com/ */
-
-/* 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
-
-/* @font-face {
-  font-family: ;
-  src: url();
-} */
 
 /* 
 Une mise en page flexible doit avoir un élément parent avec la propriété display définie sur flex.
@@ -117,270 +108,375 @@ time, mark, audio, video {
 img{
     width:100%;
 }
-/* body{
-  font-family: 'Montserrat', sans-serif;
-} */
-.container{
-    width:1200px;
-    margin: auto;
-    /*pour centrer la page dans le navigateurs*/
-    display: flex;
-    justify-content: space-around;
+body{
+  font-family: 'Lora', serif; 
 }
-
-
+.container{
+    /*width:900px;*/
+    margin:0 auto;
+    /*pour centrer la page dans le navigateurs*/
+    
+}
 
 /*************** END GLOBAL ***************/
 
 /*************** HEADER ***************/
-
-header {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  /* margin-bottom: 40px; */
+header{
+  background-color: rgb(224, 222, 222);
+  padding-bottom: 10px;
 }
-.sideL{
+.first{
   display: flex;
-  padding-top: 20px;
 }
-.logo {
-  width: 35px;
-  display: flex;
-  align-items: center;
-  /* transition: ease-out 10s; */
-  transform: rotate(360deg);
-  padding-bottom: 70px;
+.logo{
+  width: 50px;
+  text-align: left;
+  height: 50px;
+  padding-top: 15px;
   margin-left: 20px;
-  padding-top: 10px;
+  transition: ease-out 15s;
+  transform: rotate(360deg);
 }
-.myShop {
-  display: block;
-  justify-content: center;
-  margin-top: -20px;
+.boutique{
+  margin-left: 30px;
+  font-size: 35px;
 }
-.myShop h1{
-  font-size: 70px;
-  font-weight: lighter;
-  padding-left: 30px;
-}
-.myShop p {
-  font-size: 20px;
+.pink{   
   color: rgb(224, 36, 168);
   text-align: center;
-  justify-content: center;
-  font-weight: bolder;
-  padding-left: 45px;
+  font-size: 15px;
 }
-.help h2 {
-  font-size: 35px;
-  font-weight: lighter;
-  color: rgb(103, 220, 255); 
-  padding-top: 10px;
-}
-.help p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+.help {
   color: rgb(103, 220, 255);
-  position: absolute;
-  top: 55px;
-  right: 520px;
+  margin-left: 150px;
+  font-size: 20px;
 }
-.aide{
+.image{
   position: relative;
 }
+.number{
+  position: absolute;
+  top: 40px;
+  right: 510px;
+}
 .compte{
-  background-color: rgb(103, 220, 255);
-  /* border: 0 0 0 10px; */
-  color: white;
-  font-size: 12px;
-  justify-content: center;
-  text-align: center;
-  width: 380px;
+  margin-left: 90px;
+  width: 403px;
 }
 .compte2{
-  display: flex;
-  
-}
-.article {
-  width: 70px;
-  display: flex;
-}
-.panier{
   text-align: center;
-  padding-top: 30px;
-  font-size: 17px;
-  padding-left: 25px;
-  
+  background-color:rgb(103, 220, 255);
+  color: white;
+  font-size: smaller;
 }
-.border1{
-  width: 100px;
+.line{
+  width: 100%;
+  height: 3px;
+  color: rgb(224, 222, 222);
+}
+.article{
+  display: flex;
+  background-color:rgb(103, 220, 255);
+  color: white;
+}
+.article2{
+  display: flex;
+  width: 80px;
+  margin-top: 5px;
+}
+.article3{
+  font-size: 15px;
+  margin: auto;
+  margin-left: 10px;
 }
 /*************** END HEADER ***************/
 
 /*************** NAV ***************/
-nav{
+.nav1{
   display: flex;
-  justify-content: space-around;
 }
-nav li {
-  display: inline-block;
-  text-align: center;
-  /* background-color: rgb(103, 220, 255); */
+.nav1a{
+  background-color: rgb(103, 220, 255);
+  width: 1100px;
 }
-nav a {
-  display: block;
-  text-align: center;
-  font-size: 17px;
-  /* background-color: rgb(103, 220, 255); */
-  list-style: none;
-  text-decoration-line: none;
-  /* permet d'avoir les cases de la meme dimension */
-  flex: auto;
-  display: flex;
+.nav1a ul{
   list-style-type: none;
-  list-style: none;
-  /* /* padding-top: 10px; */
-  /* padding-bottom: 10px;  */
+  display: flex;
   justify-content: space-around;
-  text-align: center;
+  padding-bottom: 10px;
+  margin-top: -10px;
+}
+.nav1a>ul>li>a{
+  text-decoration-line: none;
   color: white;
 }
-nav a :hover{
-  display: inline-block;
-  /* background-color:rgb(224, 36, 168);  */
+.pink2{
+  background-color:rgb(224, 36, 168);
+  list-style: none;
+  width: 200px;
+  text-align: center;
 }
-
-.pink {
-  background-color: rgb(224, 36, 168);
-}
-.pink :hover{
+.pink2:hover{
   background-color: rgb(103, 220, 255);
 }
-.blue1 .blue2 .blue3 .blue4 .blue5 {
-  background-color:rgb(224, 36, 168); 
-
+.pink2>li>a{
+  text-decoration-line: none;
+  color: white;
 }
-
-
+.pink2>li{
+  margin-top: 10px;
+}
 /*************** END NAV ***************
 
-/*************** MAIN ***************/
-body {
-  background-image: url(../img/fond.png);
-}
-/*************** SECTION 1 ***************/
-.bandeau img{
-  margin: auto;
-  padding: 0;
-  margin: 0;
-}
-
-/*************** END SECTION 1 ***************/
-
-/*************** SECTION 2 ***************/
-section {
+/*************** SECTION  ***************/
+main{
+  background-color: rgb(241, 241, 241);
   display: flex;
-  justify-content: space-around;
-  margin: auto;
-  margin-top: 20px;
 }
-
-.paiement {
-  /* display: block; */
-  margin: auto;
-  /* border-right: solid 2px white (222,222,222); */
+.bandeau{
+  margin-bottom: -5px;
 }
-.paiement p {
-  /* margin: 20px 0; */
+.firstBloc{
+  margin-left: 15px;
+  padding-top: 20px;
+  width: 250px;
 }
-.paiement h2 {
+.paiement>h2{
   color: rgb(103, 220, 255);
+  font-weight: lighter;
 }
-.imgCb{
-  width: 200px;
+.paiement>p{
+  font-weight: bolder;
+  padding-top: 10px;
 }
-hr{
-  margin-left: 20px;
-  margin-right: 20px;
+.paiement2{
+  width: 215px;
+  padding-top: 10px;
+  margin-top: 15px;
 }
-.description {
-  margin: auto;
+.verticalLine>img{
+  width: 2px;
+  height: 150px;
+  border: 2px;
+  margin-left: 30px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
-.description h2 {
+.secondBloc{
+  margin-left: 15px;
+  padding-top: 20px;
+  width: 590px;
+}
+.description>h2{
   color: rgb(103, 220, 255);
+  font-weight: lighter;
 }
-.description p {
-  margin-top: 20px;
+.description>p{
+  font-weight: bolder;
+  padding-top: 10px;
 }
-.service {
-  margin: auto;
+.thirthBloc{
+  margin-left: 15px;
 }
-.service h2 {
-  color: rgb(103, 220, 255);
-}
-.camion {
-  /* margin-top: 20px; */
+.service{
+  padding-top: 20px;
+  width: 250px;
   display: flex;
-  margin: auto;
 }
-.camion img{
-  width: 50px;
+.service>h2{
+  color: rgb(103, 220, 255);
+  font-weight: lighter;
 }
-.camion p  {
-  margin: auto;
+.camion{
+  display: flex;
+}
+.camion>p{
+  font-weight: bolder;
+  padding-top: 10px;
+  margin: auto3;
   margin-left: 10px;
+  margin-top: 10px;
+}
+.camion>img{
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
 }
 .chan{
   display: flex;
+  margin-top: 10px;
 }
-.chan img{
-  width: 50px;
-}
-.chan p {
+.chan>p{
+  font-weight: bolder;
+  padding-top: 10px;
   margin: auto;
-  margin-left: 10px;
-
+  margin-left: 20px;
 }
-/*************** END SECTION 2 ***************/
-
-/*************** SECTION 3 ***************/
-
-.bonplan {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 40px;
-  background-color: rgb(211, 211, 211);
-}
-.bonplan2 h2 {
-  text-align: center;
-
+.chan>img{
+  width: 40px;
+  height: 35px;
 }
 
-/*************** END SECTION 3 ***************/
-
-/*************** END MAIN ***************/
+/*************** END SECTION  ***************/
 
 /*************** FOOTER ***************/
+footer{
+  background-color: rgb(241, 241, 241);
+}
+.bloc1{
+  width: 395px;
+  margin-left: 15px;
+  border-radius: 25px 25px 0 0 ;
+  box-shadow: 1px 1px 15px;
+  background-color: white;
+}
+.bloc1>h2{
+  text-align: center;
+  background-color:rgb(224, 222, 222) ;
+  font-size: medium;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+.robe{
+  display: flex;
+}
+.robe>img{
+  width: 60px;
+  height: 130px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.robe>p{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-weight: bolder;
+  width: 280px;
+  text-align: center;
+}
+.voir{
+  margin-right: 30px;
+  margin-top: -25px;
+  text-align: end;
+  /* margin-bottom: 10px; */
+  padding-top: -10px;
+}
+.voir>a{
+  color: rgb(103, 220, 255);
+}
+.bloc2{
+  width: 355px;
+  margin-left: 15px;
+  border-radius: 25px 25px 0 0 ;
+  box-shadow: 1px 1px 15px ;
+  background-color: white;
+}
+.bloc2>h2{
+  text-align: center;
+  background-color:rgb(224, 222, 222) ;
+  font-size: medium;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+.talons{
+  display: flex;
+}
+.talons>img{
+  width: 80px;
+  height: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.talons>p{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-weight: bolder;
+  width: 210px;
+}
+.voir2{
+  margin-right: 20px;
+  text-align: end;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+.voir2>a{
+  color: rgb(103, 220, 255);
+}
+.bloc3{
+  width: 395px;
+  margin-left: 15px;
+  border-radius: 25px 25px 0 0 ;
+  box-shadow: 1px 1px 15px ;
+  background-color: white;
+}
+.bloc3>h2{
+  text-align: center;
+  background-color:rgb(224, 222, 222) ;
+  font-size: medium;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+.chemise{
+  display: flex;
+}
+.chemise>img{
+  width: 90px;
+  height: 120px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.chemise>p{
+  margin-top: 10px;
+  margin-left: 25px;
+  font-weight: bolder;
+  width: 280px;
+  text-align: center;
+}
+.voir3{
+  margin-right: 15px;
+  margin-top: -15px;
+  text-align: end;
+}
+.voir3>a{
+  color: rgb(103, 220, 255);
+}
+.bottom1{
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+.nav2{
+  height: 40px;
+  background-color: rgb(103, 220, 255);
+  margin: auto;
+  margin-top: 30px;
+}
 .nav2>ul{
   display: flex;
-  list-style: none;
-  text-decoration-line: none;
   justify-content: space-evenly;
-  background-color: rgb(103, 220, 255);
-  color: white;
-  padding: 10px;
+  width: 900px;
+  margin: auto;
 }
-
+.nav2>ul>li>a{
+  text-decoration: none;
+  color: white;
+  font-size: 1px;
+}
+.nav2>ul>li{
+  list-style-type: none;
+  margin-top: 10px;
+}
 /*************** END FOOTER ***************/
 
 /*************** MEDIAQUERY ***************/
 
 @media (max-width: 1400px) {
   header {
-    /* background-color: #e68f15; */
   }
  
 }
@@ -388,7 +484,6 @@ hr{
 @media (max-width: 960px) {
   header {
     background-image: none;
-    background-color: rgb(141, 174, 79);;
   }
   nav {
     display: none;
