@@ -553,7 +553,7 @@ iframe , img{
 
 /*************** MEDIAQUERY ***************/
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   header {
     background-color: #e68f15;
   }

@@ -158,6 +158,8 @@ header{
   position: absolute;
   top: 40px;
   right: 510px;
+  color: rgb(103, 220, 255);
+
 }
 .compte{
   margin-left: 90px;
@@ -194,6 +196,7 @@ header{
 /*************** NAV ***************/
 .nav1{
   display: flex;
+  margin: auto;
 }
 .nav1a{
   background-color: rgb(103, 220, 255);
@@ -215,21 +218,19 @@ header{
   list-style: none;
   width: 200px;
   text-align: center;
+  padding-top: 10px;
 }
 .pink2:hover{
   background-color: rgb(103, 220, 255);
 }
-.pink2>li>a{
+.pink2>a{
   text-decoration-line: none;
   color: white;
-}
-.pink2>li{
-  margin-top: 10px;
 }
 /*************** END NAV ***************
 
 /*************** SECTION  ***************/
-main{
+.main1{
   background-color: rgb(241, 241, 241);
   display: flex;
 }
@@ -293,7 +294,7 @@ main{
 .camion>p{
   font-weight: bolder;
   padding-top: 10px;
-  margin: auto3;
+  margin: auto;
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -359,8 +360,6 @@ footer{
   margin-right: 30px;
   margin-top: -25px;
   text-align: end;
-  /* margin-bottom: 10px; */
-  padding-top: -10px;
 }
 .voir>a{
   color: rgb(103, 220, 255);
