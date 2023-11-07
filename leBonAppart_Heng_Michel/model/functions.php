@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"]."/leBonAppart_Heng_Michel/inc/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/evaluation_tp/leBonAppart_Heng_Michel/inc/database.php";
 
 function  annonceList(){
     //  se connecter a la db (database) ou bd (base de données)

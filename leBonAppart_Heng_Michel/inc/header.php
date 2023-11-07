@@ -12,7 +12,7 @@
     <!-- ici la navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 ">
         <div class="container-fluid ">
-            <a class="navbar-brand table-group-divider fw-bold" href="https://localhost/leBonAppart_Heng_Michel/acceuil.php ">Le Bon Appart</a>
+            <a class="navbar-brand table-group-divider fw-bold" href="https://localhost//evaluation_tp/leBonAppart_Heng_Michel/acceuil.php ">Le Bon Appart</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -30,8 +30,7 @@
                   href="./consulter_toutes_les_annonces.php">
                   Consulter toutes les annonces</a>
                 </li>         
-              </ul>
-              
+              </ul>              
             </div>
         </div>
 </nav>
