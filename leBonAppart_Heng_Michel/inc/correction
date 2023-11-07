@@ -1,0 +1,656 @@
+booking.php
+
+<?php 
+session_start();
+include_once "inc/header.php"; 
+?>
+
+<div class="container">
+    <form action="./model/db_booking.php" method="post">
+        <input type="text" name="id_room" value="<?= $_GET["room"]; ?>" hidden>
+        <input type="text" name="price" value="<?= $_GET["price"]; ?>" hidden>
+        <div class="form-group link-light">
+            <label>Start Date :</label>
+            <input type="date" class="form-control border-success-subtle border-3 mt-3" name="start_date" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label>End Date :</label>
+            <input type="date" class="form-control border-success-subtle border-3 mt-3" name="end_date" >
+        </div>
+
+        <button type="submit"  class="btn btn-primary mt-5 mb-5 bg-secondary border-success-subtle border-2" name="book" value="submit">Submit</button>
+    </form>
+</div>
+
+<?php include_once "inc/footer.php"; ?>
+
+
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$         login  -->
+
+<?php
+session_start();
+ include_once "inc/header.php"; ?>
+<div class="container">
+    <form action="model/connexion.php" method="post">
+        <div class="form-group link-light">
+            <label for="email">Email :</label>
+            <input type="email" class="form-control border-success-subtle border-3 mt-3" id="email" name="email" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="password">Password :</label>
+            <input type="password" class="form-control border-success-subtle border-3 mt-3" id="password" name="password" >
+        </div>
+
+        <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5 bg-secondary border-success-subtle border-2" name="submit" value="submit">Submit</button>
+    </form>
+</div>
+<?php include_once "inc/footer.php"; ?>
+
+<!-- register -->
+
+<?php 
+session_start();
+include_once "inc/header.php"; ?>
+<div class="container">
+    <form action="model/inscription.php" method="post">
+        <div class="form-group mt-5 mb-5 d-flex">
+            <label class="me-xl-5 link-light">Gender :</label>
+            <div class="form-check">
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y " type="radio" name="gender"  value="M">
+                <label class="form-check-label link-light lh-lg">Male</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y  m-0 float-md-none" type="radio" name="gender"  value="F">
+                <label class="form-check-label link-light lh-lg">Female</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y m-0 float-md-none" type="radio" name="gender" value="O">
+                <label class="form-check-label link-light lh-lg" >Other</label>
+            </div>
+        </div>
+ 
+        <div class="form-group link-light">
+            <label for="firstname">Firstname :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" id="firstname" name="firstname" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="lastname link-light">Lastname :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" id="lastname" name="lastname" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="email link-light">Email :</label>
+            <input type="email" class="form-control border-success-subtle border-3 mt-3" id="email" name="email" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="password link-light">Password :</label>
+            <input type="password" class="form-control border-success-subtle border-3 mt-3" id="password" name="password" >
+        </div>
+
+        <div class="form-group link-light mt-3">
+            <label>Address :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" name="address" >
+        </div>
+        
+        <div class="form-group link-light mt-3">
+            <label>Phone number :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" name="phone" >
+        </div>
+
+        <div class="form-group link-light mt-3">
+            <label>Birthday:</label>
+            <input type="date" class="form-control border-success-subtle border-3 mt-3" name="birthday" >
+        </div>
+    
+    
+        <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5 border-success-subtle border-3 mt-2 bg-secondary" name="submit" value="submit">Submit</button>
+    </form>
+</div>
+<?php include_once "inc/footer.php"; ?>
+
+<!--  user_home -->
+
+<?php 
+session_start();
+include_once "inc/header.php"; ?>
+<div class="container">
+    <form action="model/inscription.php" method="post">
+        <div class="form-group mt-5 mb-5 d-flex">
+            <label class="me-xl-5 link-light">Gender :</label>
+            <div class="form-check">
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y " type="radio" name="gender"  value="M">
+                <label class="form-check-label link-light lh-lg">Male</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y  m-0 float-md-none" type="radio" name="gender"  value="F">
+                <label class="form-check-label link-light lh-lg">Female</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input border-success-subtle border-3 mt-3 translate-middle-y m-0 float-md-none" type="radio" name="gender" value="O">
+                <label class="form-check-label link-light lh-lg" >Other</label>
+            </div>
+        </div>
+ 
+        <div class="form-group link-light">
+            <label for="firstname">Firstname :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" id="firstname" name="firstname" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="lastname link-light">Lastname :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" id="lastname" name="lastname" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="email link-light">Email :</label>
+            <input type="email" class="form-control border-success-subtle border-3 mt-3" id="email" name="email" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label for="password link-light">Password :</label>
+            <input type="password" class="form-control border-success-subtle border-3 mt-3" id="password" name="password" >
+        </div>
+
+        <div class="form-group link-light mt-3">
+            <label>Address :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" name="address" >
+        </div>
+        
+        <div class="form-group link-light mt-3">
+            <label>Phone number :</label>
+            <input type="text" class="form-control border-success-subtle border-3 mt-3" name="phone" >
+        </div>
+
+        <div class="form-group link-light mt-3">
+            <label>Birthday:</label>
+            <input type="date" class="form-control border-success-subtle border-3 mt-3" name="birthday" >
+        </div>
+    
+    
+        <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5 border-success-subtle border-3 mt-2 bg-secondary" name="submit" value="submit">Submit</button>
+    </form>
+</div>
+<?php include_once "inc/footer.php"; ?>
+
+
+<!-- *****************************************  add_room       ************************************* -->
+
+<?php 
+include_once "../inc/header.php"; 
+include_once "../model/functions.php";
+$listHotel = hotelList(); 
+?>
+
+<div class="container ">
+    <form action="../model/db_room.php" method="post" enctype="multipart/form-data">
+
+        <div class="form-group list-group form-select-lg link-light">
+            <label>Hôtel :</label>
+            <select name="hotel" class=" form-control link-dark mt-3 border-success-subtle border-3">
+                <option value="">Choose hôtel</option>
+                <?php foreach($listHotel as $hotel){ ?>
+                    <option value="<?= $hotel["id_hotel"]; ?>"><?= 
+                    $hotel["hotel_name"]; ?></option>
+                    <?php } ?>
+            </select>
+        </div>
+       
+        <div class="form-group link-light mt-3">
+            <label>Room Number :</label>
+            <input type="text" class="form-control mt-3 border-success-subtle border-3"  name="room_number" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label>Room Price :</label>
+            <input type="text" class="form-control mt-3 border-success-subtle border-3" name="room_price" >
+        </div>
+ 
+        <div class="form-group link-light mt-3">
+            <label>Persons :</label>
+            <input type="number" class="form-control mt-3 border-success-subtle border-3" name="person" >
+        </div>
+ 
+        <div class="form-group form-group list-group link-light mt-3 ">
+            <label>Category :</label>
+            <select name="category" class="form-control mt-3 border-success-subtle border-3">
+                <option value="">Choose category</option>
+                <option value="classic">Classic</option>
+                <option value="vip">Vip</option>
+            </select>
+        </div>
+
+        <div class="form-group link-light mt-3">
+            <label>Photo :</label>
+            <input type="file" class="form-control mt-3 border-success-subtle border-3" name="image" >
+        </div>
+        
+        <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5 bg-secondary border-success-subtle border-2" name="add_room" value="submit">Submit</button>
+    </form>
+</div>
+
+<?php  
+include_once "../inc/footer.php";
+?>
+
+<!-- ****************************** admin ***************************** -->
+
+<?php 
+session_start();
+// si $_SESSION["role"] est définie mais que sa valeur est différente de "admin" ou bien $_SESSION["role"] n'est pas définie
+if(!isset($_SESSION["role"]) || $_SESSION["role"] != "admin"){
+  header("Location: http://localhost/projetHotel/login.php");
+}
+include_once "../inc/header.php"; 
+?>
+
+<div class="container d-flex justify-content-around border border-success-subtle" >
+    <div class="card mt-5 m-3 w-25 border-success-subtle" style="width: 18rem;">
+      <i class="fa-solid fa-plus text-center mt-3 fs-4 link-secondary mb-2"></i>  
+      <div class="card-body bg-secondary link-light" >
+        <h5 class="card-title mt-2 ">Ajout hôtel</h5>
+        <p class="card-text">Cliquez ici pour ajouter un hôtel</p>
+        <a href="add_hotel.php" class="btn btn-primary  bg-secondary  border-success-subtle">Ajouter un hôtel</a>
+      </div>
+    </div>
+    <div class="card mt-5 m-3 w-25 border-success-subtle" style="width: 18rem;">
+      <i class="fa-solid fa-plus text-center mt-3 fs-4 link-secondary mb-2"></i>  
+      <div class="card-body bg-secondary link-light">
+        <h5 class="card-title mt-2">Ajout chambre</h5>
+        <p class="card-text">Cliquez ici pour ajouter une chambre</p>
+        <a href="add_room.php" class="btn btn-primary bg-secondary  border-success-subtle">Ajouter une chambre</a>
+      </div>
+    </div>
+    <div class="card mt-5 m-3 w-25 border-success-subtle" style="width: 18rem;">
+      <i class="fa-solid fa-list text-center mt-3 fs-4 link-secondary mb-2"></i>
+      <div class="card-body bg-secondary link-light">
+        <h5 class="card-title mt-2">Liste réservation</h5>
+        <p class="card-text">Cliquez ici pour voir la liste des réservations</p>
+        <a href="#" class="btn btn-primary bg-secondary  border-success-subtle">Liste réservation</a>
+      </div>
+    </div>
+    <div class="card mt-5 m-3 w-25 border-success-subtle" style="width: 18rem;">
+      <i class="fa-solid fa-list text-center mt-3 fs-4 link-secondary mb-2"></i>
+      <div class="card-body bg-secondary link-light">
+        <h5 class="card-title mt-2">Liste Hôtel</h5>
+        <p class="card-text">Cliquez ici pour voir la liste des hôtel</p>
+        <a href="hotel_list.php" class="btn btn-primary bg-secondary  border-success-subtle">Liste hôtel</a>
+      </div>
+    </div>
+    <div class="card mt-5 m-3 w-25 border-success-subtle" style="width: 18rem;">
+      <i class="fa-solid fa-list text-center mt-3 fs-4 link-secondary mb-2"></i>
+      <div class="card-body bg-secondary link-light">
+        <h5 class="card-title mt-2">Liste chambre</h5>
+        <p class="card-text">Cliquez ici pour voir la liste des chambres</p>
+        <a href="room_list.php" class="btn btn-primary bg-secondary  border-success-subtle">Liste chambre</a>
+      </div>
+    </div>
+</div>
+
+<?php include_once "../inc/footer.php"; ?>
+
+<!-- *****************************************     hotel_list     ******************     -->
+
+<?php 
+include_once "../inc/header.php  "; 
+require_once "../model/functions.php" ;
+$listHotel = hotelList(); 
+// print_r($listHotel);
+?>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="id_hotel bg-secondary link-light">Id Hôtel</th>
+                <th class="hotel_name bg-secondary link-light">Hôtel Name</th>
+                <th class="location bg-secondary link-light">Location</th>
+                <th class="capacity bg-secondary link-light">Capacity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($listHotel as $hotel){ ?>
+                <tr>
+                    <td class="idHotel border-success-subtle border-3 mt-2"><?= $hotel["id_hotel"]; ?></td>
+               
+                    <td class="hotelName border-success-subtle border-3 mt-2"><?= $hotel["hotel_name"]; ?></td>
+               
+                    <td class="locationn border-success-subtle border-3 mt-2"><?= $hotel["location"]; ?></td>
+               
+                    <td class="capacityyy border-success-subtle border-3 mt-2"><?= $hotel["capacity"]; ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</div>    
+
+<?php 
+include_once "../inc/footer.php"; 
+?>
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$  room_list -->
+
+<?php 
+include_once "../inc/header.php";
+require_once "../model/functions.php" ;
+$listRoom = roomlist();
+?>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="id_room bg-secondary link-light" >Id Room</th>
+                <th class="room_number bg-secondary link-light">Room Number</th>
+                <th class="price bg-secondary link-light">Price</th>
+                <th class="persons bg-secondary link-light">Persons</th>
+                <th class="category bg-secondary link-light">Category</th>
+                <th class="room_state bg-secondary link-light">Room State</th>
+                <th class="hotel_id bg-secondary link-light">Hôtel Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($listRoom as $room){ ?>
+                <tr>
+                    <td class="idRoom border-success-subtle border-3 mt-2"><?= $room["id_room"]; ?></td>
+                    <td class="roomNumber border-success-subtle border-3 mt-2"><?= $room["room_number"]; ?></td>
+                    <td class="pricee border-success-subtle border-3 mt-2"><?= $room["price"]; ?></td>
+                    <td class="personss border-success-subtle border-3 mt-2"><?= $room["persons"]; ?></td>
+                    <td class="categoryy border-success-subtle border-3 mt-2 fa-bitcoin-sign fa-bitcoin-sign link-warning"><?= $room["category"]; ?></td>
+                    <td class="roomState border-success-subtle border-3 mt-2"><?= $room["room_state"]; ?></td>
+                    <td class="hotelId border-success-subtle border-3 mt-2"><?= $room["hotel_id"]; ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</div>    
+
+<?php include_once "../inc/footer.php"; ?>
+
+<!-- ***************************************  database       ****************************** -->
+
+<?php
+function dbConnexion(){
+    $connexion = null;
+    try {
+        $connexion = new PDO("mysql:host=localhost;dbname=id21228702_db_hotel","id21228702_admin","P@sser123");
+    } catch (PDOException $e) {
+        $connexion = $e->getMessage();
+    }
+    return $connexion;
+}
+?>
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$ header  $$$$$$$$$$$$$$$$$ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="http://localhost/projetHotel/assets/css/style.css">
+    <title>header</title>
+</head>
+<body class="bg-secondary">
+    <!-- ici la navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 ">
+        <div class="container-fluid ">
+            <a class="navbar-brand table-group-divider fw-bold" href="https://autumn-drunk.000webhostapp.com ">DELUXE HÔTEL</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
+              <ul class="navbar-nav  mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active form-check-inline fw-bolder" aria-current="page" href="https://autumn-drunk.000webhostapp.com/login.php">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bolder" href="https://autumn-drunk.000webhostapp.com/register.php">Sign-up</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li> -->
+              </ul>
+              <!-- <span class="navbar-text">
+                Navbar text with an inline element
+              </span> -->
+            </div>
+        </div>
+</nav>
+
+
+<!-- **********************************************  connexion   ******************************** -->
+
+<?php
+session_start();
+require_once "../inc/database.php";
+if(isset($_POST["submit"])){
+    $email = htmlspecialchars($_POST["email"]);
+    $password = htmlspecialchars($_POST["password"]);
+
+    // etablir la connexion avec la bd
+    $db = dbConnexion();
+    // preparer la requete
+    $request = $db->prepare("SELECT * FROM users WHERE email = ?");
+    // executer la requete
+    try {
+        $request->execute(array($email));
+        // recuperer le resultat de la requete qui est toujours un objet
+        $userInfo = $request->fetch(PDO::FETCH_ASSOC);
+        // echo "<pre>";
+        // print_r($userInfo);
+        // echo "<pre>";
+        if(empty($userInfo)){
+            // definir la variable de session role
+            echo "utilisateur inconnu";
+        }else{
+            // verifier si le mdp est correct
+            if(password_verify($password,$userInfo["password"])){
+                // si l'utilisateur est un admin
+                if($userInfo["role"] == "admin"){
+                    // definir la variable de session role
+                    $_SESSION["role"] = $userInfo ["role"];
+                    header("Location: http://localhost/projetHotel/admin/admin.php");
+                }else{
+                    // definir la variable de session role
+                    $_SESSION["role"] = $userInfo ["role"];
+                    $_SESSION["id_user"] = $userInfo["id_user"];
+                    header("Location: http://localhost/projetHotel/user_home.php");
+                }
+            }else{
+                echo "Ahh tu as oublié ton mot de passe ?";
+            }
+        }
+    } catch (PDOException $e) {
+        $e->getMessage();
+    }
+
+}
+
+// ******************************* db_booking
+
+<?php
+session_start();
+require_once $_SERVER["DOCUMENT_ROOT"]."/projetHotel/inc/database.php";
+if(isset($_POST["book"])){
+    // récuprer les infos
+    $idRoom = htmlspecialchars($_POST["id_room"]);
+    $startDate = htmlspecialchars($_POST["start_date"]);
+    $endDate = htmlspecialchars($_POST["end_date"]);
+    $price = htmlspecialchars($_POST["price"]);
+    
+    // convertir en date en seconde avec strtotime depuis le 1janvier 1960
+    $dateStart = date("Ymd",strtotime($startDate));
+    $dateEnd = date("Ymd",strtotime($endDate));
+
+    $duration = strtotime($dateEnd) - strtotime($dateStart);
+
+    $nbDays = $duration / 86400;
+    $totalPrice = $price * $nbDays;
+
+    // date du jour
+    $today = date("Ymd");
+
+    // si $today est > a la date de début de réservation ou $today est > à la date de fin de réservation
+    if(strtotime($today)> strtotime($startDate) || strtotime($today)> strtotime($endtDate)){
+        echo '<script>alert("votre date de début ou de fin de réservation ne peut pas être inferieur à la date d aujourd hui")</script>';
+        echo '<script>window.location.href = "http://localhost/projetHotel/booking.php?room='.$idRoom.'&price='.$price.'";</script>';
+
+    }else{
+
+        // se connecter à la bd
+        $db = dbConnexion();
+    
+        // préparer la requête pour vérifier si la chambre est dispo entre la date de départ et la date de fin
+        $request = $db->prepare("SELECT * FROM bookings WHERE room_id = ? AND ((booking_start_date <= ? AND booking_end_date >= ?) OR (booking_start_date <= ? AND booking_end_date >= ?))");
+    
+        // executer la requete
+        try {
+            $request->execute(array($idRoom, $startDate,$startDate, $endDate, $endDate));
+    
+            // recuperer le résultat
+            $books = $request->fetch();
+            if(empty($books)){
+                if($startDate<$endDate){
+    
+                    //  preparer la requete pour reserver la chambre
+                    $request = $db->prepare("INSERT INTO `bookings`(`booking_start_date`,`booking_end_date`,`user_id`, `room_id`, `booking_price`, `booking_state`) VALUES (?,?,?,?,?,?)");
+    
+                    // executer la requete
+                    try{
+                        // $request->execute(array($startDate,$endDate,$_SESSION["id_user"],$idRoom,$price*$nbDays,'in progress'));
+                        $request->execute(array($startDate, $endDate, $_SESSION['id_user'], $idRoom, $totalPrice, "in progress"));
+
+                        header("Location: http://localhost/projetHotel/user_home.php");
+    
+                    // Réservation réussie
+                    echo "Réservation réussie!";
+                    } catch (PDOException $e) {
+                        echo $e->getMessage();
+                    }
+                    
+                } else {
+                    // Dates invalides
+                    echo "Les dates de réservation ne sont pas valides.";
+                }
+            }   else {
+                // La chambre n'est pas disponible pour ces dates
+                echo "La chambre n'est pas disponible pour les dates sélectionnées.";
+            }
+        }catch(PDOException $e){
+            echo $e->getMessage();
+        }
+    }
+}
+
+if(isset($_GET['id_book'])){
+
+        // se connecter à la bd
+        $db = dbConnexion();
+
+        // préparer la requête pour annuler la réservation
+        $request = $db->prepare("UPDATE bookings SET booking_state = ? WHERE id_booking = ?");
+        // exécuter la requête
+        try {
+            $request->execute(array("cancel", $_GET['id_book']));
+            // redirection vers user_home.php
+            header("Location: http://localhost/projetHotel/user_home.php");
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+}
+
+// ****************************** function
+
+<?php
+require_once $_SERVER["DOCUMENT_ROOT"]."/inc/database.php";
+
+function  hotelList(){
+    //  se connecter a la db (database) ou bd (base de données)
+    $db = dbConnexion();
+    // preparer la requete
+    $request = $db->prepare("SELECT * FROM hotels");
+    // executer la requete
+    $listHotel = null;
+    try {
+        $request->execute();
+        // récuperer le resultat dans un tableau
+        $listHotel = $request->fetchAll(PDO::FETCH_ASSOC);
+    } catch ( PDOException $e) {
+        echo $e->getMessage();
+    }
+    return $listHotel;
+}
+function  roomList(){
+    //  se connecter a la db (database) ou bd (base de données)
+    $db = dbConnexion();
+    // preparer la requete
+    $request = $db->prepare("SELECT * FROM rooms");
+    // executer la requete
+    $listRoom = null;
+    try {
+        $request->execute();
+        // récuperer le resultat dans un tableau
+        $listRoom = $request->fetchAll(PDO::FETCH_ASSOC);
+    } catch ( PDOException $e) {
+        echo $e->getMessage();
+    }
+    return $listRoom;
+}
+
+function  userBookList($idUser){
+    //  se connecter a la db (database) ou bd (base de données)
+    $db = dbConnexion();
+    // preparer la requete
+    $request = $db->prepare("SELECT * FROM bookings WHERE user_id = ? AND booking_state = ?");
+    // executer la requete
+    $userBookList = null;
+    try {
+        $request->execute(array($idUser,'in progress'));
+        // récuperer le resultat dans un tableau
+        $userBookList = $request->fetchAll(PDO::FETCH_ASSOC);
+    } catch ( PDOException $e) {
+        echo $e->getMessage();
+    }
+    return $userBookList;
+}
+
+// ***********************  innscription
+<?php 
+require_once "../inc/database.php";
+if(isset($_POST["submit"])){
+    // recuperer les infos saisies par le user
+    $lastName = htmlspecialchars($_POST["lastname"]);
+    $firstName = htmlspecialchars($_POST["firstname"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $password = htmlspecialchars($_POST["password"]);
+    $birthday = htmlspecialchars($_POST["birthday"]);
+    $address = htmlspecialchars($_POST["address"]);
+    $phoneNumber = htmlspecialchars($_POST["phone"]);
+    $gender = htmlspecialchars($_POST["gender"]);
+
+    // crypter le mot de passe
+    $cryptedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+    // etablir la connexion avec la bd
+    $db = dbConnexion();
+    // preparer la requete
+    $request = $db->prepare("INSERT INTO users (`last_name`, `first_name`, `email`, `password`, `birthday`, `address`, `phone_number`, `gender`) VALUES (?,?,?,?,?,?,?,?)");
+    // executer la requete
+    try {
+        $request->execute(array($lastName,$firstName,$email,$cryptedPassword,$birthday,$address,$phoneNumber, $gender));
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+
+}
+?>
+
+// **************************** 
